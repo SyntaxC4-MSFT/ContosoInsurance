@@ -3,7 +3,7 @@
 ## What is Contoso Insurance?
 Contoso Insurance is a sample that demonstrates the advantages of using the Azure App Service for building Modern Applications.  It demonstrates using the following Azure App Services features.
 
-<table class="table">
+<table>
   <thead>
     <th>Azure Services</th>
     <th>Other technologies</th>
