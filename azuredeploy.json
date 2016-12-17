@@ -254,8 +254,7 @@
         "siteConfig": {
           "AlwaysOn": true,
           "appSettings": [
-             { "name": "command", "value": "src\\Cloud\\ContosoInsurance.Function\\deploy.cmd" },
-             { "name": "FUNCTIONS_EXTENSION_VERSION", "value": "latest"}
+             { "name": "FUNCTIONS_EXTENSION_VERSION", "value": "~1"}
           ]
         }
       },
@@ -313,7 +312,7 @@
           "properties": {
             "RepoUrl": "[parameters('sourceCodeRepositoryURL')]",
             "branch": "[parameters('sourceCodeBranch')]",
-            "IsManualIntegration": "parameters('sourceCodeManualIntegration')]"
+            "IsManualIntegration": "[parameters('sourceCodeManualIntegration')]"
           }
         }
       ],
@@ -956,7 +955,7 @@
           "properties": {
             "RepoUrl": "[parameters('sourceCodeRepositoryURL')]",
             "branch": "[parameters('sourceCodeBranch')]",
-            "IsManualIntegration": "parameters('sourceCodeManualIntegration')]"
+            "IsManualIntegration": "[parameters('sourceCodeManualIntegration')]"
           }
         },
         {
