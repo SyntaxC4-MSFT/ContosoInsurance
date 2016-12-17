@@ -254,7 +254,8 @@
         "siteConfig": {
           "AlwaysOn": true,
           "appSettings": [
-             { "name": "FUNCTIONS_EXTENSION_VERSION", "value": "~1"}
+            { "name": "PROJECT", "value": "src/Cloud/ContosoInsurance.Function" },
+            { "name": "FUNCTIONS_EXTENSION_VERSION", "value": "~1" }
           ]
         }
       },
@@ -635,8 +636,7 @@
       },
       "dependsOn": [
         "[resourceId('Microsoft.Web/connections', variables('office365ConnectionName'))]",
-        "[resourceId('Microsoft.Web/sites/', variables('functionAppName'))]",
-        "[resourceId('Microsoft.Web/Sites/sourcecontrols', variables('functionAppName'), 'web')]"
+        "[resourceId('Microsoft.Web/sites/', variables('functionAppName'))]"
       ]
     },
     {
@@ -890,8 +890,7 @@
       },
       "dependsOn": [
         "[resourceId('Microsoft.Web/connections', variables('office365ConnectionName'))]",
-        "[resourceId('Microsoft.Web/sites/', variables('functionAppName'))]",
-        "[resourceId('Microsoft.Web/Sites/sourcecontrols', variables('functionAppName'), 'web')]"
+        "[resourceId('Microsoft.Web/sites/', variables('functionAppName'))]"
       ]
     },
     {
